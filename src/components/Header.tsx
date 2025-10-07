@@ -1,11 +1,10 @@
-import logo from "../assets/Logo.png"
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillTikTok } from "react-icons/ai";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 
 
 function Header() {
-
+  const logo = "public/images/Logo.png"
   return (
     <div className="header-container">
         <div className="logo-container">

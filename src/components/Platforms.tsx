@@ -1,6 +1,5 @@
 import { SiSoundcloud } from "react-icons/si";
 import { SiSpotify } from "react-icons/si";
-import spotify from "../assets/spotify.png"
 
 function Platforms() {
 

@@ -1,8 +1,7 @@
-import cover from '../assets/cover-art.png'
 import { FaPlay } from "react-icons/fa";
 
 function LatestRelease() {
-
+const cover = "/images/cover-art.png";
   return (
     <div className="latestRelease-container">
         <a href="https://open.spotify.com/track/2jG39S5GE4B4S49d2mACjx?si=2e7c004a3d664a96" target='_blank' className='latest-link'>
