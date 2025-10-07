@@ -1,0 +1,197 @@
+/* ROOT*/
+:root {
+  --dropshadow: drop-shadow(3px 3px 6px rgb(201, 201, 201));
+}
+
+.flex{
+  display: flex;
+}
+
+
+/* header -------------------------------------------------------------------------------------*/
+
+
+.header-container{
+  text-align: center;
+  margin-bottom: 3vh;
+}
+.logo-container{
+  height: 28vh;
+  width: 100%;
+  filter: brightness(1.1) contrast(1) saturate(2) hue-rotate(10deg) drop-shadow(1vh 1vh 0.5vh #8196aaaa);
+}
+.logo {
+  height: 22vh;
+  top: 2vh;
+  animation: logo 5s ease-in-out infinite; 
+  margin-top: 3vh;
+}
+@keyframes logo {
+  0%{
+    transform: translateY(-3%);
+  }
+  20%{
+    transform: translateY(-3%);
+  }
+  50%{
+    transform: translateY(3%);
+  }
+  100%{
+    transform: translateY(-3%);
+  }
+}
+
+.social-icons{
+  display: flex;
+  gap: 3vh;
+  justify-content: center;
+  margin-top: 1vh;
+}
+.social-icon{
+  color: rgb(0, 0, 0);
+  filter: drop-shadow(2px 2px 4px rgb(158, 158, 158));
+  transition: 0.2s;
+}
+.social-icon:hover{
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(2px 2px 4px rgb(141, 178, 210));
+}
+
+
+/* Latest Release -------------------------------------------------------------------------------------*/
+
+
+.latestRelease-container{
+  min-width: 320px;
+  max-width: 24vw;
+  height: 22vh;
+  background-color: white;
+  border-radius: 16px;
+  filter: drop-shadow(3px 3px 6px rgb(201, 201, 201));
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0vh;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.latestRelease-container:hover {
+  top: -0.5vh;
+  filter: drop-shadow(3px 3px 6px rgb(141, 178, 210));
+}
+
+.albumcover{
+  width: 18vh;
+  height: 18vh;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 6px rgb(201, 201, 201));
+  position: relative;
+  top: 2vh;
+  left: 2vh;
+  overflow: hidden;
+}
+
+.cover{
+  width: 100%;
+  opacity: 0.95;
+}
+
+.play-details_text{
+  font-size: 3vh;
+  font-weight: 600;
+  position: relative;
+  top: -1vh;
+  left: 4vh;
+}
+
+.play-details_button{
+  width: 6vh;
+  height: 6vh;
+  background-color: black;
+  border-radius: 100%;
+  filter: drop-shadow(2px 2px 4px rgb(172, 172, 172));
+  position: relative;
+  left: 6.5vh;
+  align-content: center;
+  text-align: center;
+}
+.play-icon{
+  width: 2vh;
+  height: 2vh;
+  color: white;
+}
+
+
+/* Soundcloud -------------------------------------------------------------------------------------*/
+
+
+.platforms-container{
+  display: flex;
+  min-width: 320px;
+  max-width: 24vw;
+  min-height: calc(320px/2);
+  max-height: calc(24vw/2);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 3vh;
+}
+
+.soundcloud-container{
+  width: calc(50% - 1.5vh);
+  aspect-ratio: 1 / 1;
+  background-color: rgb(0, 0, 0);
+  filter: drop-shadow(3px 3px 6px rgb(126, 126, 126));
+  border-radius: 16px;
+  text-align: center;
+  align-content: center;
+  transition: 0.2s;
+}
+.soundcloud-icon{
+  color: white;
+}
+
+.spotify-container{
+  width: calc(50% - 1.5vh);
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgb(227, 238, 245);
+  border-radius: 16px;
+  margin-left: 3vh;
+  text-align: center;
+  align-content: center;
+  background-image: url('src/assets/spotify.png');
+  background-size: 30vh;
+  background-position-y: -2vh;
+  background-position-x: -2vh;
+  filter: saturate(0.6) drop-shadow(3px 3px 6px rgb(171, 177, 188));
+  transition: 0.2s;
+}
+
+.soundcloud-container:hover, .spotify-container:hover{
+  transform: translateY(-0.5vh);
+  transition: 0.2s;
+}
+
+
+/* BOOK US -----------------------------------------------------------------------------------------*/
+
+.book-container{
+  min-width: 320px;
+  max-width: 24vw;
+  height: 7vh;
+  background-color: white;
+  border-radius: 16px;
+  filter: drop-shadow(3px 3px 6px rgb(201, 201, 201));
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 3vh;
+}
+.book-text{
+  font-size: 2vh;
+  font-weight: 700;
+  position: relative;
+  top: 50%;
+  transform: translateY(-55%);
+}
