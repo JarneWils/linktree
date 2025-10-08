@@ -4,7 +4,7 @@ import { TbBrandYoutubeFilled } from "react-icons/tb";
 
 
 function Header() {
-  const logo = "public/images/Logo.png"
+  const logo = "/images/Logo.png"
   return (
     <div className="header-container">
         <div className="logo-container">
