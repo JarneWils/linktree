@@ -195,3 +195,33 @@
   top: 50%;
   transform: translateY(-55%);
 }
+
+@media (max-width: 768px) {
+  .header-container{
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+  }
+  .logo-container{
+    height: 20vh;
+    margin-bottom: 6vh;
+  }
+  .logo {
+    height: 22vh;
+    top: 0vh;
+    margin-top: 2vh;
+  }
+  .platforms-container{
+    margin-top: 2vh;
+  }
+  .soundcloud-container{
+    width: calc(50%);
+  }
+  .spotify-container{
+    width: calc(50%);
+    margin-left: 2vh;
+  }
+  .book-container{
+    height: 6vh;
+    margin-top: 2vh;
+  }
+}
