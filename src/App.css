@@ -1,6 +1,8 @@
 /* ROOT*/
 :root {
   --dropshadow: drop-shadow(3px 3px 6px rgb(201, 201, 201));
+  cursor: url('/images/cursor.png') 1 1, auto ;
+
 }
 
 .flex{
@@ -65,7 +67,7 @@
   min-width: 320px;
   max-width: 24vw;
   height: 22vh;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 16px;
   filter: drop-shadow(3px 3px 6px rgb(201, 201, 201));
   position: relative;
@@ -73,7 +75,7 @@
   transform: translateX(-50%);
   top: 0vh;
   transition: 0.2s;
-  cursor: pointer;
+  cursor: url('/images/pointer.png') 1 1, auto ;
 }
 .latestRelease-container:hover {
   top: -0.5vh;
@@ -116,8 +118,8 @@
   text-align: center;
 }
 .play-icon{
-  width: 2vh;
-  height: 2vh;
+  padding-top: 4px;
+  padding-left: 2px;
   color: white;
 }
 
@@ -179,7 +181,7 @@
   min-width: 320px;
   max-width: 24vw;
   height: 7vh;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 16px;
   filter: drop-shadow(3px 3px 6px rgb(201, 201, 201));
   position: relative;
@@ -187,6 +189,13 @@
   transform: translateX(-50%);
   text-align: center;
   margin-top: 3vh;
+  transition-duration: 0.2s;
+  cursor: url('/images/pointer.png') 4 4, auto ;
+}
+.book-container:hover {
+  left: calc(50% + 1vh) ;
+  transition-duration: 0.2s;
+  filter: drop-shadow(3px 3px 6px rgb(141, 178, 210));
 }
 .book-text{
   font-size: 2vh;
@@ -219,6 +228,9 @@
   .spotify-container{
     width: calc(50%);
     margin-left: 2vh;
+  }
+  .spotify-icon{
+    size: 50vw !important;
   }
   .book-container{
     height: 6vh;

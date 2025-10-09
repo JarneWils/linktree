@@ -22,4 +22,5 @@ html, body, * {
 a {
   text-decoration: inherit;
   color: black;
+  cursor: url('/images/pointer.png') 1 1, auto ;
 }
